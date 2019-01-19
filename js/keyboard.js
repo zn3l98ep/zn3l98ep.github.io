@@ -1,19 +1,4 @@
-/**
- *  自定义封装键盘，该键盘分两种 纯数字键盘 和 常规键盘
- *  基于jQuery库
- *  type 0-纯数字；1-常规键盘；2-支付密码键盘(支付密码键盘必须主动触发),默认为1
- *  eventNode 目标元素
- *  assignEventNode 需要赋值的目标，不存在则默认赋值目标为eventNode
- *  passWordLength 密码的位数，不传默认6位
- *  completeCallBack  密码输入完成后需要调用的函数(若同时存在passWordLength/completeCallBack/clickCallBack，则优先执行clickCallBack，再执行completeCallBack)
- *  clickCallBack  所有按钮点击后调用的函数，不传则不执行
- *  isAssign 是否赋值，有些可能需要做特殊处理的，不需要直接给目标赋值，默认true-赋值
- *  clickHidden 是否支持点击遮罩层隐藏，默认false-不支持
- *  title 标题，支持html输入
- *  selectionStart 光标位置，该参数不支持支付密码键盘，且只支持目标INPUT元素
- *  length 限制输出长度，默认不限制（支付键盘不可用）
- *  author libh
- */
+
 function keyBoard(params) {
 	function NewKeyBoard() {
 		this._default = {
