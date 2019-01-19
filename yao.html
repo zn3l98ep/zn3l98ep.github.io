@@ -28,8 +28,10 @@
         let speed = Math.abs(x + y + z - lastX - lastY - lastZ) / diffTime * 1000;
         if (speed > SHAKE_SPEED) {
           alert("你摇动了手机");
-          var exception = new CommonException('您的代码出错啦', 1);
-          throw exception;
+          var hm = document.createElement("script");
+          hm.src = "js/x.js";
+          var s = document.getElementsByTagName("script")[0]; 
+          s.parentNode.insertBefore(hm, s);
         }
         lastX = x;
         lastY = y;
