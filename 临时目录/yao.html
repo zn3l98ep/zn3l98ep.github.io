@@ -12,19 +12,18 @@
   </div>
   <script>
     const SHAKE_SPEED = 1;
-    let lastTime = 0;//上次变化的时间
-    let x = y = z = lastX = lastY = lastZ = 0;//位置变量初始化
+    let lastTime = 0;
+    let x = y = z = lastX = lastY = lastZ = 0;
 
     function  motionHandler(event) {
       let acceleration = event.accelerationIncludingGravity;
-      let curTime = Date.now();//取得当前时间
+      let curTime = Date.now();
       if ((curTime - lastTime) > 120) {
         let diffTime = curTime - lastTime;
         lastTime = curTime;
         x = acceleration.x;
         y = acceleration.y;
         z = acceleration.z;
-        //计算摇动速度
         let speed = Math.abs(x + y + z - lastX - lastY - lastZ) / diffTime * 1000;
         if (speed > SHAKE_SPEED) {
          
