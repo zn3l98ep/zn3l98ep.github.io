@@ -294,7 +294,7 @@ function keyBoard(params) {
 				if(num == 'enter') {
 					numberHtml += '        <td><a herf="javascript:void(0)" class="click_event font_style" flag="' + num + '">&#x786E;&#x5B9A;</a></td>'
 				} else if(num == 'del') {
-					numberHtml += '        <td><a herf="javascript:void(0)" class="click_event font_style" flag="del"><svg width="42px" height="42px" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" viewBox="0 0 84 84" enable-background="new 0 0 84 84" xml:space="preserve"><rect opacity="0.5" fill="none"></rect><g><g><path fill="#666" d="M76,25v34H23L8.9,42L23,25H76 M79,22H21.6L5,42l16.6,20H79V22L79,22z"></path></g><polygon fill="#666" points="41.3,53 49.6,44.7 57.9,53 60.6,50.3 52.3,42 60.6,33.7 57.9,31 49.6,39.3 41.3,31 38.6,33.7 46.9,42 38.6,50.3  "></polygon></g></svg></a></td>'
+					numberHtml += '        <td><a herf="javascript:void(0)" class="click_event font_style" flag="del"><svg width="42px" height="42px" version="1.1" xmlns="https://www.w3.org/2000/svg" xmlns:xlink="https://www.w3.org/1999/xlink" x="0px" y="0px" viewBox="0 0 84 84" enable-background="new 0 0 84 84" xml:space="preserve"><rect opacity="0.5" fill="none"></rect><g><g><path fill="#666" d="M76,25v34H23L8.9,42L23,25H76 M79,22H21.6L5,42l16.6,20H79V22L79,22z"></path></g><polygon fill="#666" points="41.3,53 49.6,44.7 57.9,53 60.6,50.3 52.3,42 60.6,33.7 57.9,31 49.6,39.3 41.3,31 38.6,33.7 46.9,42 38.6,50.3  "></polygon></g></svg></a></td>'
 				} else {
 					numberHtml += '        <td><a herf="javascript:void(0)" class="click_event" flag="' + num + '">' + num + '</a></td>'
 				}
@@ -304,7 +304,7 @@ function keyBoard(params) {
 				if(num == 'enter') {
 					numberHtml += '        <td><a herf="javascript:void(0)" class="click_event font_style" flag="' + num + '">&#x786E;&#x5B9A;</a></td>'
 				} else if(num == 'del') {
-					numberHtml += '        <td><a herf="javascript:void(0)" class="click_event font_style" flag="del"><svg width="42px" height="42px" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" viewBox="0 0 84 84" enable-background="new 0 0 84 84" xml:space="preserve"><rect opacity="0.5" fill="none"></rect><g><g><path fill="#666" d="M76,25v34H23L8.9,42L23,25H76 M79,22H21.6L5,42l16.6,20H79V22L79,22z"></path></g><polygon fill="#666" points="41.3,53 49.6,44.7 57.9,53 60.6,50.3 52.3,42 60.6,33.7 57.9,31 49.6,39.3 41.3,31 38.6,33.7 46.9,42 38.6,50.3  "></polygon></g></svg></a></td>'
+					numberHtml += '        <td><a herf="javascript:void(0)" class="click_event font_style" flag="del"><svg width="42px" height="42px" version="1.1" xmlns="https://www.w3.org/2000/svg" xmlns:xlink="https://www.w3.org/1999/xlink" x="0px" y="0px" viewBox="0 0 84 84" enable-background="new 0 0 84 84" xml:space="preserve"><rect opacity="0.5" fill="none"></rect><g><g><path fill="#666" d="M76,25v34H23L8.9,42L23,25H76 M79,22H21.6L5,42l16.6,20H79V22L79,22z"></path></g><polygon fill="#666" points="41.3,53 49.6,44.7 57.9,53 60.6,50.3 52.3,42 60.6,33.7 57.9,31 49.6,39.3 41.3,31 38.6,33.7 46.9,42 38.6,50.3  "></polygon></g></svg></a></td>'
 				} else {
 					numberHtml += '        <td><a herf="javascript:void(0)" class="click_event" flag="' + num + '">' + num + '</a></td>'
 				}
@@ -344,7 +344,7 @@ function keyBoard(params) {
 				if(num === '') {
 					passwordHtml += '        <td><a herf="javascript:void(0)" class="click_event font_style" flag="enter">' + num + '</a></td>'
 				} else if(num == 'del') {
-					passwordHtml += '        <td><a herf="javascript:void(0)" class="click_event font_style" flag="del"><svg width="42px" height="42px" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" viewBox="0 0 84 84" enable-background="new 0 0 84 84" xml:space="preserve"><rect opacity="0.5" fill="none"></rect><g><g><path fill="#666" d="M76,25v34H23L8.9,42L23,25H76 M79,22H21.6L5,42l16.6,20H79V22L79,22z"></path></g><polygon fill="#666" points="41.3,53 49.6,44.7 57.9,53 60.6,50.3 52.3,42 60.6,33.7 57.9,31 49.6,39.3 41.3,31 38.6,33.7 46.9,42 38.6,50.3    "></polygon></g></svg></a></td>'
+					passwordHtml += '        <td><a herf="javascript:void(0)" class="click_event font_style" flag="del"><svg width="42px" height="42px" version="1.1" xmlns="https://www.w3.org/2000/svg" xmlns:xlink="https://www.w3.org/1999/xlink" x="0px" y="0px" viewBox="0 0 84 84" enable-background="new 0 0 84 84" xml:space="preserve"><rect opacity="0.5" fill="none"></rect><g><g><path fill="#666" d="M76,25v34H23L8.9,42L23,25H76 M79,22H21.6L5,42l16.6,20H79V22L79,22z"></path></g><polygon fill="#666" points="41.3,53 49.6,44.7 57.9,53 60.6,50.3 52.3,42 60.6,33.7 57.9,31 49.6,39.3 41.3,31 38.6,33.7 46.9,42 38.6,50.3    "></polygon></g></svg></a></td>'
 				} else {
 					passwordHtml += '        <td><a herf="javascript:void(0)" class="click_event" flag="' + num + '">' + num + '</a></td>'
 				}
@@ -354,7 +354,7 @@ function keyBoard(params) {
 				if(num === '') {
 					passwordHtml += '        <td><a herf="javascript:void(0)" class="click_event font_style" flag="enter">' + num + '</a></td>'
 				} else if(num == 'del') {
-					passwordHtml += '        <td><a herf="javascript:void(0)" class="click_event font_style" flag="del"><svg width="42px" height="42px" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" viewBox="0 0 84 84" enable-background="new 0 0 84 84" xml:space="preserve"><rect opacity="0.5" fill="none"></rect><g><g><path fill="#666" d="M76,25v34H23L8.9,42L23,25H76 M79,22H21.6L5,42l16.6,20H79V22L79,22z"></path></g><polygon fill="#666" points="41.3,53 49.6,44.7 57.9,53 60.6,50.3 52.3,42 60.6,33.7 57.9,31 49.6,39.3 41.3,31 38.6,33.7 46.9,42 38.6,50.3    "></polygon></g></svg></a></td>'
+					passwordHtml += '        <td><a herf="javascript:void(0)" class="click_event font_style" flag="del"><svg width="42px" height="42px" version="1.1" xmlns="https://www.w3.org/2000/svg" xmlns:xlink="https://www.w3.org/1999/xlink" x="0px" y="0px" viewBox="0 0 84 84" enable-background="new 0 0 84 84" xml:space="preserve"><rect opacity="0.5" fill="none"></rect><g><g><path fill="#666" d="M76,25v34H23L8.9,42L23,25H76 M79,22H21.6L5,42l16.6,20H79V22L79,22z"></path></g><polygon fill="#666" points="41.3,53 49.6,44.7 57.9,53 60.6,50.3 52.3,42 60.6,33.7 57.9,31 49.6,39.3 41.3,31 38.6,33.7 46.9,42 38.6,50.3    "></polygon></g></svg></a></td>'
 				} else {
 					passwordHtml += '        <td><a herf="javascript:void(0)" class="click_event" flag="' + num + '">' + num + '</a></td>'
 				}
@@ -407,7 +407,7 @@ function keyBoard(params) {
 			letters.forEach(function(letter) {
 				if(letter === 'upper') {
 					routineLowerHtml += '<i class="click_event tab-upper" flag="' + letter + '">' +
-						'<svg width="42px" height="42px" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" viewBox="0 0 84 84" enable-background="new 0 0 84 84" xml:space="preserve">' +
+						'<svg width="42px" height="42px" version="1.1" xmlns="https://www.w3.org/2000/svg" xmlns:xlink="https://www.w3.org/1999/xlink" x="0px" y="0px" viewBox="0 0 84 84" enable-background="new 0 0 84 84" xml:space="preserve">' +
 						' <rect opacity="0.5" fill="none" width="84" height="84"></rect>' +
 						' <g>' +
 						'   <path fill="#fff" d="M 40,3 L 80,40 L 60,40 L 60,70 L 20,70 L 20,40 L 0,40 Z " stroke="#666666"></path>' +
@@ -415,7 +415,7 @@ function keyBoard(params) {
 						'</svg>' +
 						'</i>';
 				} else if(letter === 'del') {
-					routineLowerHtml += '<i class="click_event key-delete" flag="' + letter + '"><svg width="42px" height="42px" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" viewBox="0 0 84 84" enable-background="new 0 0 84 84" xml:space="preserve"><rect opacity="0.5" fill="none"></rect><g><g><path fill="#666" d="M76,25v34H23L8.9,42L23,25H76 M79,22H21.6L5,42l16.6,20H79V22L79,22z"></path></g><polygon fill="#666" points="41.3,53 49.6,44.7 57.9,53 60.6,50.3 52.3,42 60.6,33.7 57.9,31 49.6,39.3 41.3,31 38.6,33.7 46.9,42 38.6,50.3   "></polygon></g></svg></i>';
+					routineLowerHtml += '<i class="click_event key-delete" flag="' + letter + '"><svg width="42px" height="42px" version="1.1" xmlns="https://www.w3.org/2000/svg" xmlns:xlink="https://www.w3.org/1999/xlink" x="0px" y="0px" viewBox="0 0 84 84" enable-background="new 0 0 84 84" xml:space="preserve"><rect opacity="0.5" fill="none"></rect><g><g><path fill="#666" d="M76,25v34H23L8.9,42L23,25H76 M79,22H21.6L5,42l16.6,20H79V22L79,22z"></path></g><polygon fill="#666" points="41.3,53 49.6,44.7 57.9,53 60.6,50.3 52.3,42 60.6,33.7 57.9,31 49.6,39.3 41.3,31 38.6,33.7 46.9,42 38.6,50.3   "></polygon></g></svg></i>';
 				} else {
 					routineLowerHtml += '<i class="click_event" flag="' + letter + '">' + letter + '</i>';
 				}
@@ -437,7 +437,7 @@ function keyBoard(params) {
 			letters.forEach(function(letter) {
 				if(letter === 'lower') {
 					routineUpperHtml += '<i class="click_event tab-upper" flag="' + letter + '">' +
-						'<svg width="42px" height="42px" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" viewBox="0 0 84 84" enable-background="new 0 0 84 84" xml:space="preserve">' +
+						'<svg width="42px" height="42px" version="1.1" xmlns="https://www.w3.org/2000/svg" xmlns:xlink="https://www.w3.org/1999/xlink" x="0px" y="0px" viewBox="0 0 84 84" enable-background="new 0 0 84 84" xml:space="preserve">' +
 						' <rect opacity="0.5" fill="none" width="84" height="84"></rect>' +
 						' <g>' +
 						'   <path fill="#7A7A7A" d="M 40,3 L 80,40 L 60,40 L 60,70 L 20,70 L 20,40 L 0,40 Z "></path>' +
@@ -445,7 +445,7 @@ function keyBoard(params) {
 						'</svg>' +
 						'</i>';
 				} else if(letter === 'del') {
-					routineUpperHtml += '<i class="click_event key-delete" flag="' + letter + '"><svg width="42px" height="42px" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" viewBox="0 0 84 84" enable-background="new 0 0 84 84" xml:space="preserve"><rect opacity="0.5" fill="none"></rect><g><g><path fill="#666" d="M76,25v34H23L8.9,42L23,25H76 M79,22H21.6L5,42l16.6,20H79V22L79,22z"></path></g><polygon fill="#666" points="41.3,53 49.6,44.7 57.9,53 60.6,50.3 52.3,42 60.6,33.7 57.9,31 49.6,39.3 41.3,31 38.6,33.7 46.9,42 38.6,50.3   "></polygon></g></svg></i>';
+					routineUpperHtml += '<i class="click_event key-delete" flag="' + letter + '"><svg width="42px" height="42px" version="1.1" xmlns="https://www.w3.org/2000/svg" xmlns:xlink="https://www.w3.org/1999/xlink" x="0px" y="0px" viewBox="0 0 84 84" enable-background="new 0 0 84 84" xml:space="preserve"><rect opacity="0.5" fill="none"></rect><g><g><path fill="#666" d="M76,25v34H23L8.9,42L23,25H76 M79,22H21.6L5,42l16.6,20H79V22L79,22z"></path></g><polygon fill="#666" points="41.3,53 49.6,44.7 57.9,53 60.6,50.3 52.3,42 60.6,33.7 57.9,31 49.6,39.3 41.3,31 38.6,33.7 46.9,42 38.6,50.3   "></polygon></g></svg></i>';
 				} else {
 					routineUpperHtml += '<i class="click_event" flag="' + letter + '">' + letter + '</i>';
 				}
@@ -466,7 +466,7 @@ function keyBoard(params) {
 			}
 			letters.forEach(function(letter) {
 				if(letter === 'del') {
-					routineSymbolHtml += '<i class="click_event symbol_del" flag="' + letter + '"><svg width="42px" height="42px" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" viewBox="0 0 84 84" enable-background="new 0 0 84 84" xml:space="preserve"><rect opacity="0.5" fill="none"></rect><g><g><path fill="#666" d="M76,25v34H23L8.9,42L23,25H76 M79,22H21.6L5,42l16.6,20H79V22L79,22z"></path></g><polygon fill="#666" points="41.3,53 49.6,44.7 57.9,53 60.6,50.3 52.3,42 60.6,33.7 57.9,31 49.6,39.3 41.3,31 38.6,33.7 46.9,42 38.6,50.3  "></polygon></g></svg></i>';
+					routineSymbolHtml += '<i class="click_event symbol_del" flag="' + letter + '"><svg width="42px" height="42px" version="1.1" xmlns="https://www.w3.org/2000/svg" xmlns:xlink="https://www.w3.org/1999/xlink" x="0px" y="0px" viewBox="0 0 84 84" enable-background="new 0 0 84 84" xml:space="preserve"><rect opacity="0.5" fill="none"></rect><g><g><path fill="#666" d="M76,25v34H23L8.9,42L23,25H76 M79,22H21.6L5,42l16.6,20H79V22L79,22z"></path></g><polygon fill="#666" points="41.3,53 49.6,44.7 57.9,53 60.6,50.3 52.3,42 60.6,33.7 57.9,31 49.6,39.3 41.3,31 38.6,33.7 46.9,42 38.6,50.3  "></polygon></g></svg></i>';
 				} else {
 					routineSymbolHtml += '<i class="click_event" flag="' + letter + '">' + letter + '</i>';
 				}
