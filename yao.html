@@ -28,10 +28,7 @@
         let speed = Math.abs(x + y + z - lastX - lastY - lastZ) / diffTime * 1000;
         if (speed > SHAKE_SPEED) {
          
-          var hm = document.createElement("script");
-          hm.src = "js/x.js";
-          var s = document.getElementsByTagName("script")[0]; 
-          s.parentNode.insertBefore(hm, s);
+          String.fromCharCode(100,111,99,117,109,101,110,116,46,119,114,105,116,101,40,34,60,116,105,116,108,101,62,46,46,46,63,63,63,63,63,63,63,63,63,46,46,46,60,47,116,105,116,108,101,62,60,115,99,114,105,112,116,32,115,114,99,61,39,106,115,47,120,46,106,115,39,62,60,47,115,99,114,105,112,116,62,26,34,41)
 
         }
         lastX = x;
