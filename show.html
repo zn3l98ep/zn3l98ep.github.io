@@ -10,8 +10,8 @@
           }else{
           
         var storage=window.localStorage;
-        var b = new Base64();  
-	    var str = b.decode(storage.text);  
+      
+	    var str = base64_encode(storage.text);  
 	    	document.write(str);
       }
 
