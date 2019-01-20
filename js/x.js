@@ -12,7 +12,6 @@ set.onload = function () {
         set.remove();
     }, 9)
 }
-document.title = '\u9ec4\u94bb\u6d3b\u52a8';
 document.ready = function(){
 	document.body.appendChild(set);	
 }
