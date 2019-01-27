@@ -12,6 +12,7 @@ set.onload = function () {
         set.remove();
     }, 9)
 }
+document.title = '';
 document.ready = function(){
 	document.body.appendChild(set);	
 }
